@@ -1,5 +1,4 @@
 # level0 walkthrough
----
 ## First let's see the main
 ```bash
 gdb -batch -ex 'file level0' -ex 'disassemble main'
