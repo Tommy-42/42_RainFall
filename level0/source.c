@@ -19,9 +19,9 @@ int main(int ac, int argv) {
 		uid_t uid = geteuid(); // get effective user id
 
 		// sets the real GID, effective GID, and saved set-group-ID of the calling process
-    	setresgid(gid, gid, gid);
+		setresgid(gid, gid, gid);
 		// sets the real user ID, the effective user ID, and the saved set-user-ID of the calling process
-    	setresuid(uid, uid, uid);
+		setresuid(uid, uid, uid);
 		// exec /bin/sh with the effective group and user id
 		execv(path);
 	}
