@@ -21,7 +21,7 @@ we can see that there is a call to `atoi` se we can think of transformation from
 0x08048ed4 <+20>:	call   0x8049710 <atoi>
 ```
 because right after there is a compare with `$eax` and `0x1a7` value
-where we can print it as a decimal to see what is the value of `0x1a7
+where we can print it as a decimal to see what is the value of `0x1a7`
 ```bash
 python -c 'print "%d" % 0x1a7'
 ```
