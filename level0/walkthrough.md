@@ -1,5 +1,6 @@
 # level0 walkthrough
-## First let's see the main
+
+First let's see the main
 ```bash
 gdb -batch -ex 'file level0' -ex 'disassemble main'
 ```
@@ -26,7 +27,7 @@ where we can print it as a decimal to see what is the value of `0x1a7`
 python -c 'print "%d" % 0x1a7'
 ```
 the result of the commande is : `423`
-so let's try to pass it as a parameter of the programm
+so let's try to pass it as a parameter to the programm
 ```bash
 ./level0 423
 ```
